@@ -6,6 +6,8 @@
 
 This project automates drawing a perfect circle in a web game where the objective is to draw a circle as accurately as possible. The program captures two mouse positions and then simulates drawing a perfect circle that passes through both points.
 
+The game can be played at https://neal.fun/perfect-circle/
+
 ## Overview
 
 The program performs the following steps:
