@@ -1,10 +1,17 @@
-use std::{thread::sleep, time::Duration};
+use std::thread::sleep;
+use std::time::Duration;
 use windows::Win32::Foundation::POINT;
-use windows::Win32::UI::Input::KeyboardAndMouse::{
-    SendInput, INPUT, INPUT_0, INPUT_MOUSE, MOUSEEVENTF_ABSOLUTE, MOUSEEVENTF_LEFTDOWN,
-    MOUSEEVENTF_LEFTUP, MOUSEEVENTF_MOVE, MOUSEINPUT,
-};
-use windows::Win32::UI::WindowsAndMessaging::{GetCursorPos, SetCursorPos};
+use windows::Win32::UI::Input::KeyboardAndMouse::SendInput;
+use windows::Win32::UI::Input::KeyboardAndMouse::INPUT;
+use windows::Win32::UI::Input::KeyboardAndMouse::INPUT_0;
+use windows::Win32::UI::Input::KeyboardAndMouse::INPUT_MOUSE;
+use windows::Win32::UI::Input::KeyboardAndMouse::MOUSEEVENTF_ABSOLUTE;
+use windows::Win32::UI::Input::KeyboardAndMouse::MOUSEEVENTF_LEFTDOWN;
+use windows::Win32::UI::Input::KeyboardAndMouse::MOUSEEVENTF_LEFTUP;
+use windows::Win32::UI::Input::KeyboardAndMouse::MOUSEEVENTF_MOVE;
+use windows::Win32::UI::Input::KeyboardAndMouse::MOUSEINPUT;
+use windows::Win32::UI::WindowsAndMessaging::GetCursorPos;
+use windows::Win32::UI::WindowsAndMessaging::SetCursorPos;
 
 fn main() {
     println!("Waiting for 2 seconds...");
